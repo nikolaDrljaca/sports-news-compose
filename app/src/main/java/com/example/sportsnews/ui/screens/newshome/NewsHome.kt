@@ -27,8 +27,6 @@ fun NewsHome(
     val newsHomeViewModel: NewsHomeViewModel = viewModel()
     val state by newsHomeViewModel.state.collectAsState()
 
-    //
-
     NewsHomeScreen(
         articles = state.articles,
         onArticleClicked = { onArticleClicked(it) },
